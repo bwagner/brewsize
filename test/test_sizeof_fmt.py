@@ -31,9 +31,6 @@ class TestSizeof_fmt(unittest.TestCase):
         val *= 1024;
         self.assertEqual(sizeof_fmt.sizeof_fmt(val), '1024.0YiB')
 
-    def test_create_all_pairs(self):
-        pass
-
 def main():
     unittest.main()
 
