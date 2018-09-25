@@ -1,0 +1,5 @@
+# recursively ignore directories names __pycache__ (courtesy of the trailing slash).
+__pycache__/
+
+# recursively ignore files ending in .pyc
+*.pyc
