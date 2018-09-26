@@ -5,7 +5,6 @@ import unittest
 
 class TestBrewsize(unittest.TestCase):
 
-
     def setUp(self):
         pass
 
@@ -15,8 +14,10 @@ class TestBrewsize(unittest.TestCase):
     def test_dummy(self):
         pass
 
+
 def main():
     unittest.main()
+
 
 if __name__ == "__main__":
     main()
