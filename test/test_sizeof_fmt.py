@@ -14,21 +14,21 @@ class TestSizeof_fmt(unittest.TestCase):
         val = 1024
         self.assertEqual(sizeof_fmt.sizeof_fmt(val), '1.0KiB')
         self.assertEqual(sizeof_fmt.sizeof_fmt(1225), '1.2KiB')
-        val *= 1024;
+        val *= 1024
         self.assertEqual(sizeof_fmt.sizeof_fmt(val), '1.0MiB')
-        val *= 1024;
+        val *= 1024
         self.assertEqual(sizeof_fmt.sizeof_fmt(val), '1.0GiB')
-        val *= 1024;
+        val *= 1024
         self.assertEqual(sizeof_fmt.sizeof_fmt(val), '1.0TiB')
-        val *= 1024;
+        val *= 1024
         self.assertEqual(sizeof_fmt.sizeof_fmt(val), '1.0PiB')
-        val *= 1024;
+        val *= 1024
         self.assertEqual(sizeof_fmt.sizeof_fmt(val), '1.0EiB')
-        val *= 1024;
+        val *= 1024
         self.assertEqual(sizeof_fmt.sizeof_fmt(val), '1.0ZiB')
-        val *= 1024;
+        val *= 1024
         self.assertEqual(sizeof_fmt.sizeof_fmt(val), '1.0YiB')
-        val *= 1024;
+        val *= 1024
         self.assertEqual(sizeof_fmt.sizeof_fmt(val), '1024.0YiB')
 
 def main():
