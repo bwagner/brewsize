@@ -20,7 +20,7 @@ def main():
     print("{}:{}".format( pgnam, getpid() ))
 
     nbytes = sys.argv[1];
-    print "{} is {}".format(nbytes, sizeof_fmt(nbytes))
+    print ("{} is {}".format(nbytes, sizeof_fmt(nbytes)))
 
 if __name__ == "__main__":
     main()

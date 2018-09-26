@@ -8,6 +8,7 @@ import json
 import requests
 import sizeof_fmt
 from osxplatform import get_local_platform
+from functools import reduce
 
 import logging
 import argparse

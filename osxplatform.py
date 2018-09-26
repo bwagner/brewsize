@@ -36,9 +36,9 @@ def main():
     print("{}:{}".format( pgnam, getpid() ))
 
     if len(sys.argv) < 2:
-        print get_local_platform()
+        print (get_local_platform())
     else:
-        print get_platform(sys.argv[1])
+        print (get_platform(sys.argv[1]))
 
 if __name__ == "__main__":
     main()
