@@ -4,6 +4,7 @@ from os.path import basename
 from os import getpid
 import platform
 
+
 def get_platform(version):
     try:
         get_platform.names
@@ -25,20 +26,23 @@ def get_platform(version):
 
     return get_platform.names[version].lower().replace(" ", "_")
 
+
 def get_local_platform():
     ver = platform.mac_ver()[0]
     ver = ver[:ver.rfind('.')]
     return get_platform(ver)
 
+
 def main():
 
     pgnam = basename(sys.argv[0])
-    print("{}:{}".format( pgnam, getpid() ))
+    print("{}:{}".format(pgnam, getpid()))
 
     if len(sys.argv) < 2:
-        print (get_local_platform())
+        print(get_local_platform())
     else:
-        print (get_platform(sys.argv[1]))
+        print(get_platform(sys.argv[1]))
+
 
 if __name__ == "__main__":
     main()

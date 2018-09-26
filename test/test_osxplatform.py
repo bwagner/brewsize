@@ -2,6 +2,7 @@
 import osxplatform
 import unittest
 
+
 class TestBrewsize(unittest.TestCase):
 
     def setUp(self):
@@ -27,8 +28,10 @@ class TestBrewsize(unittest.TestCase):
         self.assertEqual(osxplatform.get_platform('10.13'), 'high_sierra')
         self.assertEqual(osxplatform.get_platform('10.14'), 'mojave')
 
+
 def main():
     unittest.main()
+
 
 if __name__ == "__main__":
     main()
